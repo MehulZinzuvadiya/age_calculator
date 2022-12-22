@@ -17,15 +17,21 @@ class _CalculatorState extends State<Calculator> {
         centerTitle: true,
         backgroundColor: Colors.teal,
       ),
-      body: Row(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Container(
-            height: 100,
-            width: 100,
-            color: Colors.red,
+          Text(
+            "Birth Year",
+            style: TextStyle(fontSize: 18, color: Colors.teal),
           ),
-          Spacer(),
-          Container(height: 100, width: 100, color: Colors.green)
+          SizedBox(
+            height: 20,
+          ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder()
+            ),
+          ),
         ],
       ),
     ));
